@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="jscommon/umychart.resource/css/tools.css" />
+    <link rel="stylesheet" href="jscommon/umychart.resource/font/iconfont.css" />
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <script src="jscommon/umychart.resource/js/jquery.min.js"></script>
+    <script src="jscommon/umychart.resource/js/webfont.js"></script>
+    <script src='jscommon/umychart.console.js'></script>     <!-- 日志输出 -->
+    <script src="jscommon/umychart.network.js"></script>     <!-- 网络请求分装 -->
+    <script src="jscommon/umychart.js"></script>             <!-- K线图形 -->
+    <script src="jscommon/umychart.complier.js"></script>    <!-- 麦语言解析执行器 -->
+    <script src="jscommon/umychart.index.data.js"></script>  <!-- 基础指标库 -->
+    <script src="jscommon/umychart.style.js"></script>       <!-- 白色风格和黑色风格配置信息 -->
+    <script src="jscommon/umychart.NetworkFilterTest.js"></script>
+</head>
+
+<body>
+
+    <!-- home
+    ================================================== -->
+    <main class="s-home s-home--static">
+
+        <div class="overlay"></div>
+
+        <div class="home-content">
+            <div class="home-logo">Next Update: <span id="update-timer">0</span></div>
+            <div id="kline" style="margin-top: 50px;"></div>
+
+<!--
+            <div class="home-logo">
+                <a href="index-static.html">
+                    <img src="images/logo.svg" alt="Homepage">
+                </a>
+            </div>
+-->
+            <div class="row home-content__main">
+
+
+<!--                <div class="col-eight home-content__text pull-right">-->
+<!--                    <h3>Welcome to Count</h3>-->
+
+<!--                    <h1>-->
+<!--                    We are currently working <br>-->
+<!--                    on a new super awesome <br> website.-->
+<!--                    </h1>-->
+
+<!--                    <p>-->
+<!--                    Nulla porttitor accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. -->
+<!--                    Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. -->
+<!--                    Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.-->
+<!--                    </p>-->
+
+<!--                    <div class="home-content__subscribe">-->
+<!--                        <form id="mc-form" class="group" novalidate="true">-->
+<!--                            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">-->
+<!--                            <input type="submit" name="subscribe" value="Notify Me">-->
+<!--                            <label for="mc-email" class="subscribe-message"></label>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>  &lt;!&ndash; end home-content__text &ndash;&gt;-->
+
+<!--                <div class="col-four home-content__counter">-->
+<!--                    <h3>Launching In</h3>-->
+
+<!--                    <div class="home-content__clock">-->
+<!--                        <div class="top">-->
+<!--                            <div class="time days">-->
+<!--                                325-->
+<!--                                <span>Days</span>-->
+<!--                            </div>-->
+<!--                        </div>    -->
+<!--                        <div class="time hours">-->
+<!--                            09-->
+<!--                            <span>H</span>-->
+<!--                        </div>-->
+<!--                        <div class="time minutes">-->
+<!--                            54-->
+<!--                            <span>M</span>-->
+<!--                        </div>-->
+<!--                        <div class="time seconds">-->
+<!--                            30-->
+<!--                            <span>S</span>-->
+<!--                        </div>-->
+<!--                    </div>  &lt;!&ndash; end home-content__clock &ndash;&gt;-->
+                </div>  <!-- end home-content__counter -->
+
+            </div>  <!-- end home-content__main -->
+
+            <div class="row home-copyright">
+<!--                <span>Copyright Count 2018</span> -->
+                <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>
+            </div> <!-- end home-copyright -->
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+    </main> <!-- end s-home -->
+
+    <!-- info
+    ================================================== -->
+    <p>
+        <a class="info-toggle" href="#0">
+            <span class="info-menu-icon"></span>
+        </a>
+    </p>
+
+    <div class="s-info">
+
+        <div class="row info-wrapper">
+
+            <div class="col-seven tab-full info-main">
+                <h1>ABOUT ME</h1>
+                <p>
+                    I'm a software developer keen on data processing and financial market.
+                    Skilled at Java and Python programming.
+                    Participated both architecture design and implement roles for 3+ years experience.
+                </p>
+
+                <p>
+                    My experiences in past positions have allowed me to gain in depth knowledge in data management and financial product.
+                    In my previous job, I developed a system to automatically trading Nasdaq futures.
+                    The system involved extensive knowledge such as data transfer, data structure, algorithm, market order matching, etc.
+                </p>
+
+                <p>
+                    This page used for demonstrate front-end skills.
+                    Data shows on this website are not guarantee reliability.
+                    <br><a href="https://www.binance.com/en/futures/BTCUSDT">Binance Futures</a>
+                    <br><a href="https://binance-docs.github.io/apidocs/futures/en">Binance API</a>
+                </p>
+
+
+
+                <p>Happy coding!</p>
+            </div>
+
+            <div class="col-four tab-full pull-right info-contact">
+                <div class="info-block">
+                    <h3>Contact</h3>
+
+                    <ul class="info-social">
+                        <li>
+                            <a href="mailto:pakrlau@gmail.com"><i class="far fa-envelope" aria-hidden="true"></i>
+                            <span>pakrlau@gmail.com</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/pak-lau-196aa2189"><i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <span>LinkedIn</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h3>Credit</h3>
+
+                    <ul class="info-social">
+                        <li>
+                            <a href="https://github.com/jones2000/HQChart"><i class="fab fa-github" aria-hidden="true"></i>
+                            <span>HQChart</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.styleshout.com/"><i class="fab fa-css3" aria-hidden="true"></i>
+                                <span>Design by StyleShout</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.binance.com/en/futures/BTCUSDT"><i class="fab fa-btc" aria-hidden="true"></i>
+                                <span>Binance</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+<!--                <div class="info-block">-->
+<!--                    <h3>Visit Our Office</h3>-->
+<!--                    -->
+<!--                    <p class="info-address">-->
+<!--                        1600 Amphitheatre Parkway<br>-->
+<!--                        Mountain View, CA<br>-->
+<!--                        94043 US-->
+<!--                    </p>-->
+<!--                </div>-->
+
+            </div>  <!-- end info contact -->
+
+        </div>  <!-- end info wrapper -->
+
+    </div> <!-- end s-info -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        MARKET_SUFFIX_NAME.GetMarketStatus = function (symbol)  { return 2; } //2=盘中
+
+        //简单的把K线控件封装下
+        function KLineChart(divKLine)
+        {
+            this.DivKLine=divKLine;
+            this.Chart=JSChart.Init(divKLine, false, true);   //把K线图绑定到一个Div上
+
+            //K线配置信息
+            this.Option= {
+                Type:'历史K线图',   //创建图形类型
+                //Type:'历史K线图横屏',
+
+                //EnableBorderDrag:false,
+
+                Windows: //窗口指标
+                [
+                    {Index:"MA" },
+                    {Index:"MACD"},
+                    {Index:"VOL"},
+                ],
+
+
+                OverlayIndex:
+                [
+                   //{ Index:'MA', Windows:0 , IsShareY:true, ShowRightText:false , IsShowIndexTitle:true, FloatPrecision:5 },
+                    //{Index:'RSI', Windows:0, ShowRightText:false },
+                    //{ Index:'BOLL', Windows:0, ShowRightText:true,IsShareY:true, ShowToolbar:true },
+                   // {Windows:0, IndexName:"指标ID", Name:"自定义指标", Script:"DRAWTEXT(CLOSE<OPEN,H,14),VALIGN2,ALIGN1,YMOVE(-10), XMOVE(5);", Identify:"guid_66990",ShowRightText:true,IsShareY:true }
+                    //{Index:'MA5', Windows:1 ,ShowRightText:true}
+                    //{Index:"VOL_OVERLAY", Windows:0 },
+                ],  //叠加指标
+
+
+                //OverlayIndexFrameWidth:1,
+                //DragDownload: { Day:{ Enable:true } , Minute:{ Enable:true }},
+
+                EnableZoomUpDown:
+                {
+                    //Wheel:false,
+                    //Keyboard:false,
+                    //Touch:false,
+                },
+
+                EnableYDrag:
+                {
+                    Right:true,
+                    Left:true,
+                },
+
+                Language:'EN',
+
+                Symbol:"BTCUSDT(Futures) @ Binance",
+                IsAutoUpdate:true,       //是自动更新数据
+                AutoUpdateFrequency: 10000,   //数据更新频率
+                //TradeIndex: {Index:'交易系统-BIAS'},    //交易系统
+
+                SplashTitle:'加载数据中......',
+
+                IsShowRightMenu:true,          //右键菜单
+                IsShowCorssCursorInfo:true,    //是否显示十字光标的刻度信息
+                //CorssCursorTouchEnd:true,
+                //IsClickShowCorssCursor:true,
+                //IsCorssOnlyDrawKLine:true,
+
+                CtrlMoveStep:10,
+
+                //EnableVerifyRecvData:true,
+
+                CorssCursorInfo: { Right:2, DateFormatType:3, HPenType:1, VPenType:1, IsShowClose:false, VLineType:0,RightButton:{ Enable:true }, IsShowCorss:true, PriceFormatType:0, DataFormatType:0 },
+                EnableZoomIndexWindow:true,
+
+                DrawTool:       //画图工具
+                {
+                    //StorageKey:'4E7EA133-D6C8-4776-9869-1DDDCC5FA744'
+                },
+
+/*
+//K线周期
+    KLINE_DAY_ID:0,
+    KLINE_WEEK_ID:1,
+    KLINE_TWOWEEK_ID:21,
+    KLINE_MONTH_ID:2,
+    KLINE_QUARTER_ID:9,
+
+    KLINE_YEAR_ID:3,
+    KLINE_MINUTE_ID:4,
+    KLINE_5_MINUTE_ID:5,
+    KLINE_15_MINUTE_ID:6,
+    KLINE_30_MINUTE_ID:7,
+    KLINE_60_MINUTE_ID:8,
+*/
+                KLine:  //K线设置
+                {
+                    DragMode:1,                 //拖拽模式 0=禁止拖拽 1=数据拖拽 2=区间选择
+                    Right:1,                    //复权 0 不复权 1 前复权 2 后复权
+                    Period:4,                   //周期 0 日线 1 周线 2 月线 3 年线
+                    MaxRequestDataCount:3000,   //数据个数
+                    MaxRequestMinuteDayCount:5, //分钟数据获取几天数据  默认取5天数据
+
+                    //Info:["互动易","大宗交易",'龙虎榜',"调研","业绩预告","公告"],       //信息地雷
+                    //Info:["公告"],
+                    IsShowTooltip:true,                 //是否显示K线提示信息
+                    DrawType:0,      //K线类型 0=实心K线柱子 1=收盘价线 2=美国线 3=空心K线柱子 4=收盘价面积图
+                    //FirstShowDate:20161201,
+                    KLineDoubleClick:false, //禁止双击弹框
+                    RightSpaceCount:2,
+                    ZoomType:0,
+
+                    //PageSize:30,               //一屏显示多少数据
+                    DataWidth:10,
+                },
+
+                StepPixel:0,
+
+                IsDrawPictureXY:true,
+
+                Listener:
+                {
+                    //KeyDown:false,
+                    //Wheel:false
+                },
+
+                SelectedChart:{ EnableSelected: true, EnableMoveOn:true },
+                EnableIndexChartDrag:true,
+
+                KLineTitle: //标题设置
+                {
+                    IsShowName:true,       //不显示股票名称
+                    IsShowSettingInfo:false, //不显示周期/复权
+                    IsTitleShowLatestData:true,
+                },
+
+                EnableYDrag:
+                {
+                    Right:true,
+                    Left:true,
+                },
+
+                Border: //边框
+                {
+                    Left:50,         //左边间距
+                    Right:90,       //右边间距
+                    Bottom:25,      //底部间距
+                    Top:25,         //顶部间距
+
+                    AutoLeft:{ Blank:10, MinWidth:60 },
+                    AutoRight:{ Blank:5, MinWidth:60 },
+                },
+
+                Frame:  //子框架设置
+                [
+                    {
+                        SplitCount:6,
+
+                        Custom:
+                        [
+
+                            {
+                                Type:0,
+                                Position:'right',LineType:1,
+                                //PositionEx:1,
+                            },
+/*
+                            {
+                                Type:1,
+                                Position:'right',IsShowLine:true, LineType:0,
+                                //PositionEx:1,
+                                Data:
+                                [
+                                    {
+                                        Value:7.73,
+                                        Color:'rgb(0, 0 ,205)', TextColor:'rgb(255,255,255)',    //Color:线段及文字背景色 TextColor:文字颜色
+                                        Text:[ {Text:"价格:9.73"}, {Text:"成本线"} ]
+                                    },
+                                    {
+                                        Value:6.50,
+                                        Color:'rgb(255 ,165, 79)', TextColor:'rgb(255,255,255)',    //Color:线段及文字背景色 TextColor:文字颜色
+                                    }
+                                ]
+                            },
+
+                            {
+                                Type:1,
+                                Position:'right',IsShowLine:true,LineType:1,PositionEx:1, LineWidth:2, LineDash:[4,4],
+                                Data:
+                                [
+                                    {
+                                        Value:8.0,
+                                        Color:'rgb(255,185,255)', TextColor:'rgb(255,255,255)',    //Color:线段及文字背景色 TextColor:文字颜色
+                                    },
+                                    {
+                                        Value:5.51,
+                                        Color:'rgb(255,185,0)', TextColor:'rgb(255,255,255)',    //Color:线段及文字背景色 TextColor:文字颜色
+                                    }
+                                ]
+                            }
+*/
+                        ]
+
+
+
+                    },
+
+                    { SplitCount:5 },
+                    { SplitCount:4 }
+                ],
+
+                ExtendChart:    //扩展图形
+                [
+                    //{Name:'KLineTooltip' },  //手机端tooltip
+                    //{Name:"FrameSplitPaint", LineColor:"rgb(200,0,0)" }
+                ],
+
+
+                Overlay:
+                [
+                    //{Symbol:'399300.sz', DrawType:1, Color:'rgb(0,0,255)'},
+                    //{ Symbol:'600999.sh' }
+                ],
+            };
+
+            this.Create=function()  //创建图形
+            {
+                var self=this;
+                //$(window).resize(function() { self.OnSize( {Type:1} ); });    //绑定窗口大小变化事件
+                $(window).resize(function() { self.OnSize( ); });    //绑定窗口大小变化事件
+
+                var blackStyle=HQChartStyle.GetStyleConfig(STYLE_TYPE_ID.BLACK_ID); //读取黑色风格配置
+                blackStyle.UpBarColor = "rgb(25,158,0)";
+                blackStyle.DownBarColor = "rgb(238,21,21)";
+                JSChart.SetStyle(blackStyle);
+                this.DivKLine.style.backgroundColor=blackStyle.BGColor; //设置最外面的div背景
+                JSChart.GetResource().ToolbarButtonStyle=1;
+
+                this.OnSize();  //让K线全屏
+                //this.Option.NetworkFilter=(data, callback)=>{ HQData.NetworkFilter(data, callback); }
+                this.Option.NetworkFilter=(data, callback)=>{ this.NetworkFilter(data, callback); }
+                this.Chart.SetOption(this.Option);  //设置K线配置
+            }
+
+            this.NetworkFilter=function(data, callback)
+            {
+                console.log('[NetworkFilter] data', data);
+                switch(data.Name)
+                {
+                    case 'KLineChartContainer::ReqeustHistoryMinuteData':   //1分钟全量数据下载
+                        this.RequestHistoryMinuteData(data, callback);
+                        break;
+                    case 'KLineChartContainer::RequestMinuteRealtimeData':  //1分钟增量数据更新
+                        this.RequestMinuteRealtimeData(data,callback);
+                        break;
+                    case 'APIScriptIndex::ExecuteScript':
+                        console.log('[NetworkFilter] index name ',data.Request.Data.indexname);
+                        break;
+                }
+            }
+
+// Init full data
+            this.RequestHistoryMinuteData=function(data, callback)
+            {
+                data.PreventDefault=true;
+                var symbol=data.Request.Data.symbol; //请求的股票代码
+
+                var binanceData = getBinanceData(360);
+
+                //console.log(KLINE_MINUTE_DATA);
+                //console.log(responseData);
+
+                //var hqchartData=KLINE_MINUTE_DATA;
+                var hqchartData=binanceData;
+                hqchartData.name=symbol;
+                hqchartData.symbol=symbol;
+                callback(hqchartData);
+
+                document.getElementById("update-timer").innerHTML = this.Option.AutoUpdateFrequency / 1000;
+            }
+
+// Incremental data
+            this.RequestMinuteRealtimeData=function(data,callback)
+            {
+                data.PreventDefault=true;
+                var symbol=data.Request.Data.symbol[0]; //请求的股票代码
+
+                var binanceData = getBinanceData(10);
+
+                console.log(`[this::RequestMinuteRealtimeData] Symbol=${symbol}`);
+
+                //var hqchartData=JSON.parse(JSON.stringify(KLINE_1MINUTE_DATA));
+                var hqchartData=binanceData;
+/*
+                var kItem=hqchartData.data[0];
+                var price=kItem[5];
+                var value=Math.ceil(Math.random()*10)/1000*price;
+                var bUp=Math.ceil(Math.random()*10)>=5;
+
+                if (bUp) price+=value;
+                else price-=value;
+                kItem[5]=price;
+                kItem[3]=Math.max(price, kItem[3]);
+                kItem[4]=Math.min(price, kItem[4]);
+*/
+                hqchartData.name=symbol;
+                hqchartData.symbol=symbol;
+                callback(hqchartData);
+
+                // reset screen timer
+                document.getElementById("update-timer").innerHTML = this.Option.AutoUpdateFrequency / 1000;
+            }
+
+            this.OnSize=function(option)  //自适应大小调整
+            {
+                var height= $(window).height()-50;
+                var width = $(window).width();
+                //width=50000;
+                this.DivKLine.style.top='0px';
+                this.DivKLine.style.left='0px';
+                this.DivKLine.style.width=width+'px';
+                this.DivKLine.style.height=height+'px';
+                this.Chart.OnSize(option);
+            }
+
+            this.ChangeSymbol=function(symbol)
+            {
+                this.Chart.ChangeSymbol(symbol);
+            }
+
+            this.ChangeIndexCount=function()
+            {
+                //已经存在的指标不会改变，新的窗口使用option的配置指标
+                var option=
+                {
+                    Windows:
+                    [
+                        {Index:"MA", Modify:true,Change:false},
+                        {Index:"MACD2"},
+                        {Index:"MACD",Modify:false, Change:true, Close:true,IsShowLeftText:false},
+                        {Index:"VOL", Args:[ { Name:'M1', Value:6} ,{ Name:'M2', Value:8}] , Modify:false,Change:false, Close:true,IsShowLeftText:false },
+                    ],
+                };
+
+                this.Chart.ChangeIndexWindowCount(4,option);
+            }
+
+            this.OverlayIndex=function()
+            {
+                var option={WindowIndex:0, IndexName:"指标ID", Name:"自定义指标", Args:[{Name:"T", Value:5}],
+                Script:"T:MA(O,20);DRAWTEXT_LINE(O>C,13,'13.00',RGB(0,33,3), 10,1, RGB(0,255,0));", Identify:"guid_66990"};
+                //var option={WindowIndex:0, IndexName:"MACD", Identify:"guid_66990"};
+                this.Chart.AddOverlayIndex(option);
+            }
+
+            this.ChangeIndex=function(windowIndex,indexName,option)
+            {
+                this.Chart.ChangeIndex(windowIndex,indexName,option);
+            }
+
+            this.AddIndexWindow=function(indexName)
+            {
+                this.Chart.AddIndexWindow(indexName);
+            }
+        }
+
+        $(function ()
+        {
+            WebFont.load({ custom: { families: ['iconfont'] } });   //预加载下iconfont资源
+
+            var klineControl=new KLineChart(document.getElementById('kline'));
+            klineControl.Create();
+
+            $("#button_7").click(function() { klineControl.AddIndexWindow("RSI"); } );
+
+            $("#button_1").click(function() { klineControl.Chart.ChangePeriod(0); } );
+            $("#button_2").click(function() { klineControl.Chart.ChangePeriod(1); } );
+            $("#button_3").click(function() { klineControl.Chart.ChangePeriod(2); } );
+
+            $("#button_4").click(function() { klineControl.Chart.ChangePeriod(4); } );
+            $("#button_5").click(function() { klineControl.Chart.ChangePeriod(5); } );
+            $("#button_6").click(function() { klineControl.Chart.ChangePeriod(6); } );
+
+        })
+
+        function getBinanceData(limit) {
+            var responseData = {
+                "ver": 2,
+                "data": []
+            };
+
+            $.ajax({
+              type: "GET",
+              async: false,
+              data: {
+                "symbol": "BTCUSDT",
+                "interval": "1m",
+                "limit": limit,
+              },
+              url: "https://fapi.binance.com/fapi/v1/klines",
+              success: function (data) {
+                var yClose = data[0][1];
+                for (let d of data) {
+                    responseData.data.push(
+                        convertBinanceToChartKlineData(d, parseFloat(yClose))
+                    );
+                    yClose = d[4];
+                }
+              }
+            });
+
+            return responseData;
+        }
+
+        function convertBinanceToChartKlineData(data, yClose) {
+            var dt = new Date(data[0]);
+            return [
+                dt.getFullYear()*10000+(dt.getMonth()+1)*100+dt.getDate(),
+                yClose,
+                parseFloat(data[1]),
+                parseFloat(data[2]),
+                parseFloat(data[3]),
+                parseFloat(data[4]),
+                parseFloat(data[5]),
+                parseFloat(data[7]),
+                dt.getHours()*100+(dt.getMinutes()*1)
+            ];
+        }
+
+        var dataUpdateTimer = setInterval(function() {
+            var currentTime = document.getElementById("update-timer").innerHTML;
+            if (currentTime > 0) {
+                document.getElementById("update-timer").innerHTML = currentTime - 1;
+            }
+        }, 1000)
+    </script>
+
+</body>
+
+</html>
